@@ -8,6 +8,9 @@ count = 0 # Initialize face image counter
 cap = cv2.VideoCapture(0) # Start capturing video
 while True:
     _, frame = cap.read() # Capture video frame
+    # 🔹 ปรับขนาดเฟรมตรงนี้
+    frame = cv2.resize(frame, (150, 150))
+
     height, width, channels = frame.shape
     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) # Convert frame to grayscale
 
@@ -16,6 +19,7 @@ while True:
         cv2.rectangle(frame,(x,y),(x+w,y+ h),(128,0,128),1) # Crop the image frame into rectangle
         face = frame[y:y+ h, x:x+w] # Convert Crop the image to face
         faceGray = gray[y:y+ h, x:x+w]
+        
         cv2.imshow('Face', face) # Display the Face frame
 
         eyes = eye_cascade.detectMultiScale(faceGray) # Detect frames of different sizes
