@@ -5,7 +5,10 @@ smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml')
 SCALE_FACTOR = 1.3
 MIN_NEIGHBORS = 5
 count = 0 # Initialize face image counter
+
 cap = cv2.VideoCapture(0) # Start capturing video
+#cap = cv2.VideoCapture("http://192.168.25.150:4747/video") # initialize the camera
+
 while True:
     _, frame = cap.read() # Capture video frame
     # 🔹 ปรับขนาดเฟรมตรงนี้
