@@ -43,11 +43,11 @@ def get_state():
 
 
 if __name__ == "__main__":
-    # print("👉 Start managing queue")
-    # print(set_active(True))
+    print("👉 Start managing queue")
+    print(set_active(True))
 
-    print("👉 Stop managing queue")
-    print(set_active(False))
+    # print("👉 Stop managing queue")
+    # print(set_active(False))
 
     print("👉 Check state")
     print(get_state())
