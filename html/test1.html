@@ -1,0 +1,39 @@
+<head>
+    <center> <b><a href="gpio.php">remote GPIO</a></b>
+    </center>
+</head>
+
+<div onmouseover='mOver(this)' onmouseout='mOut(this)'
+    style='background-color:#D94A38;width:120px;height:20px;padding:40px;'>Mouse Over Me</div>
+<script>
+    function mOver(obj) { obj.style.backgroundColor = '#1ec5e5'; obj.innerHTML = 'Mouse Out Off' }
+    function mOut(obj) { obj.style.backgroundColor = '#4A38D9'; obj.innerHTML = 'Mouse Over ON' }
+</script>
+
+<br>
+<form method='get' action= />
+<input type='hidden' name='GPIO2on' />
+<input type='submit' value='GPIO 2 on' />
+</form>
+<form method='get' action= />
+<input type='hidden' name='GP102off' />
+<input type='submit' value='GPIO 2 off' />
+</form>
+<form method='get' action= />
+<input type='hidden' name='GPIO3on' />
+<input type='submit' value='GPIO 3 on' />
+</form>
+<form method='get' action= />
+<input type='hidden' name='GP103off' />
+<input type='submit' value='GPIO 3 off' />
+</form>
+<form method='get' action= />
+<input type='hidden' name='GP104on' />
+<input type='submit' value='GPIO 4 on' />
+</form>
+<form method='get' action= />
+<input type='hidden' name='GP104off' />
+<input type='submit' value='GPIO 4 off' />
+</form>
+
+
